@@ -61,7 +61,7 @@ namespace WindowsFormsApp1
                 {
                     moverBoneco(andar[randNum.Next(4)], 2);
                 }
-                if(detectarPixel(0xB22D29, 0, 0, 1920, 1080) == true)
+                if(detectarPixel(0xA32A28, 0, 0, 1920, 1080) == true)
                 {
                     if (detectarPixel(0x512F00, 0, 0, 1920, 1080) == true) 
                     {
@@ -70,10 +70,21 @@ namespace WindowsFormsApp1
                     }
                     else
                     {
-                        if (!fugir.Checked)
-                            atacar();
+                        if (mudarpoke.Checked)
+                        {
+                            au3.MouseClick("LEFT", 647, 835);
+                            Thread.Sleep(100);
+                            au3.MouseClick("LEFT",786, 478);
+                            Thread.Sleep(10000);
+                            if (!fugir.Checked)
+                            {
+                                atacar();
+                            }
+                        }
                         else
+                        {
                             au3.MouseClick("LEFT", 934, 830, 1, 2);
+                        }
                     }
                 }
             }
@@ -134,7 +145,9 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("is to come!!");
+            BattleFrontEnd passar = new BattleFrontEnd();
+            passar.Show();
+            this.Hide();
         }
     }
 }

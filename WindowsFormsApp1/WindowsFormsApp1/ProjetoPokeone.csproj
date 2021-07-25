@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BattleFrontEnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BattleFrontEnd.Designer.cs">
+      <DependentUpon>BattleFrontEnd.cs</DependentUpon>
+    </Compile>
     <Compile Include="PegarPokemon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BattleFrontEnd.resx">
+      <DependentUpon>BattleFrontEnd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PegarPokemon.resx">
       <DependentUpon>PegarPokemon.cs</DependentUpon>
     </EmbeddedResource>

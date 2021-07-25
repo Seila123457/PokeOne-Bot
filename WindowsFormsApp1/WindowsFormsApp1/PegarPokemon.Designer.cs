@@ -38,11 +38,12 @@ namespace WindowsFormsApp1
             this.move1 = new System.Windows.Forms.CheckBox();
             this.fugir = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.mudarpoke = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // Moverato
             // 
-            this.Moverato.Location = new System.Drawing.Point(12, 177);
+            this.Moverato.Location = new System.Drawing.Point(12, 212);
             this.Moverato.Name = "Moverato";
             this.Moverato.Size = new System.Drawing.Size(146, 35);
             this.Moverato.TabIndex = 0;
@@ -119,17 +120,28 @@ namespace WindowsFormsApp1
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(199, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(272, 200);
+            this.button1.Size = new System.Drawing.Size(272, 235);
             this.button1.TabIndex = 7;
             this.button1.Text = "Battlefrontiend";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // mudarpoke
+            // 
+            this.mudarpoke.AutoSize = true;
+            this.mudarpoke.Location = new System.Drawing.Point(12, 177);
+            this.mudarpoke.Name = "mudarpoke";
+            this.mudarpoke.Size = new System.Drawing.Size(141, 21);
+            this.mudarpoke.TabIndex = 8;
+            this.mudarpoke.Text = "Change pokemon";
+            this.mudarpoke.UseVisualStyleBackColor = true;
+            // 
             // PegarPokemon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(483, 227);
+            this.ClientSize = new System.Drawing.Size(483, 259);
+            this.Controls.Add(this.mudarpoke);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.fugir);
             this.Controls.Add(this.move1);
@@ -157,6 +169,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.CheckBox move1;
         private System.Windows.Forms.CheckBox fugir;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox mudarpoke;
     }
 }
 
